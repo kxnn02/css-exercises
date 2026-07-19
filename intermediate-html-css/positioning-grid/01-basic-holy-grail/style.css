@@ -46,3 +46,41 @@ html {
   color: white;
   text-align: left;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 600px;
+  grid-template-rows: 200px 200px 1000px 200px;
+  gap: 15px;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-column-end: 2;
+  grid-row-end: 4;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.nav {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.article {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
